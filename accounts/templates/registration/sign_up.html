@@ -1,0 +1,16 @@
+{% extends 'accounts/base.html' %}
+{%load static %}
+{% block content %}
+<link href="{%static 'accounts/css/style.css'%}" rel="stylesheet" type="text/css">
+<form method="post">
+    {%csrf_token%}
+    <!-- {{form.as_p}} -->
+    {%for field in form%}</br>
+    {{field.label_tag}}</br>
+    {{field}}
+    {%endfor%}
+<div></br>
+    <input type="submit" value="Sign up">
+</div>
+</form>
+{% endblock %}

@@ -1,0 +1,58 @@
+/*#content{
+    background:white url("images/team_greentech.jpg") no-repeat;
+}
+*/
+
+li a{
+    color: green;
+}
+a{text-decoration: none;}
+/*MAIN HEADER STYLING*/
+#main-header{
+    float: left;
+    color: royalblue;
+    background-color: papayawhip;
+    margin-top: 10px auto;
+    border: 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+#main-header nav{
+    border-width: 10px;
+    position: relative;
+    
+}
+#logo{
+    margin: 10px;
+}
+#first{
+    font-size: 45px;
+    color: red;
+}
+#second{
+    font-size: 35px;
+    color: blue;
+}
+#search-form{
+    text-align: right;
+    
+}
+
+#nav {
+    background-color: white;
+    
+}
+
+#search-form input{
+    border-radius: 10px;
+    vertical-align: auto;
+}
+
+/*NAVBAR STYLING*/
+#nav-options a{
+    width: 100%;
+    background-color:blue;
+    color: red;
+    margin-top: 0px;
+    float: right;
+}

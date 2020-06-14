@@ -1,0 +1,24 @@
+
+<br>
+<div id="main-header">
+    <div id="logo"><span id="first">Poll</span><span id="second">Maker.com</span></div>
+    <div id="search-form">
+    <form action="" method="GET">
+        <input class="search" type="text" name="search" placeholder="Search polls" id="search">
+        <input class="search-btn" type="button" name="search-btn" value="Submit" id="search-btn">
+    </div>
+    </form>
+    <br>
+</div>
+<p>
+    <nav id="nav">        
+        <h3>
+            <a href="{% url 'polls:index' %}"> Home </a>
+            <a href="{% url 'polls:create_poll' %}"> Create Poll </a>
+            <a href="{% url 'polls:archives' %}"> Archives </a>
+            <a href="{% url 'polls:events' %}"> Events</a>
+        </h3>
+    </nav>
+    <br>
+</p>
+</div>

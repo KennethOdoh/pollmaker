@@ -1,0 +1,14 @@
+<head>
+    <title>
+        {% block title %}
+        pollmaker.com
+        {% endblock %}
+    </title>
+</head>
+<body>
+    {% include "accounts/nav.html" %}
+    {% include "accounts/header.html" %}
+    {% block content%}{% endblock%}
+<div id="demacator"></div>
+    {% include "accounts/footer.html" %}
+</body>

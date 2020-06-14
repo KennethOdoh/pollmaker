@@ -1,0 +1,22 @@
+{% extends 'polls/base.html' %}
+{% load static%}
+
+<div id="content">
+    <br>
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/css/style.css' %}">
+<img src="{% static 'polls/images/photo3-cropped.jpeg' %}">
+
+<p>
+{% if latest_question_list %}
+    {% for question in latest_question_list %}
+    
+<div id="question">
+    <h4><a href="{% url 'polls:detail' question.id %}">{{question.question_text}}</a></h4>
+</div>
+{% endfor %}
+    {%else%}
+    <p> No polls available. </p>
+{% endif %}
+{% endblock %}
+</div>  
